@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body class="container-fluid bg-image" style="background-image: url(../static/imgs/solid-painted-concrete-wall-textured-backdrop.jpg); height: 100vh; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+  
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container rounded" style="background-color:#ffffff; filter: opacity(0.6);">
+      <a class="navbar-brand" href="home">
+        <img src="../static/imgs/picturetopeople.org-40deaf54dacdb063110ca610234d7e1a431e2823b4d34000ef.png"
+          style="max-width: 40%; max-height: 40%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active navbar-light aria-current=" page" href="home"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-light" href="pictures">Pictures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-light" href="writings">Writings</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    {% block section %}
+
+    {% endblock %}
+
+  </section>
+  </div>
+
+</body>
+
+</html>

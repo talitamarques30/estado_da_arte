@@ -1,0 +1,49 @@
+{% extends "base1.html" %}
+
+{% block head %}
+<title>Pictures</title>
+{% endblock %}
+
+{% block section %}
+
+    <div class="container d-flex align-items-center justify-content-center">
+    <div id="carouselExample" class="carousel slide ">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card d-block" style="width: 38rem; background-color: #cfb5f5;">
+                <img src="../static/imgs/imagemimagn.PNG" class="card-img-top" alt="image1">
+                <div class="card-body">
+                  <p class="card-text">Sapucaí St. bridge. Belo Horizonte, Minas Gerais, Brasil.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card d-block" style="width: 38rem; background-color: #cfb5f5;">
+                <img src="../static/imgs/P260913_2221[03].jpg" class="card-img-top" alt="image2">
+                <div class="card-body">
+                  <p class="card-text">Cover detail of Kafka's The Metamorphosis book.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card d-block" style="width: 38rem; background-color: #cfb5f5;">
+                <img src="../static/imgs/empireum.PNG" class="card-img-top" alt="image1">
+                <div class="card-body">
+                  <p class="card-text">Empireum. Art by me.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</div>
+
+{% endblock %}
